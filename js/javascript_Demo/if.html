@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	/*var age = 0;
+	if(age >= 18){
+		console.log('已成年');
+	}else{
+		console.log('未成年');
+	}*/
+	/*var score = prompt("输入成绩");
+	if(score >= 90)
+	{
+		alert('优秀')
+	}else if(score >= 80){
+		alert('良好')
+	}else if(score >= 60){
+		alert('中等')
+	}else {
+		alert('不及格')
+		}*/
+    var level = prompt("设置金字塔层数");
+	if(isNaN(level))
+	{
+		alert("金字塔层数必须是数字")
+	}
+	for(var i=1;i<=level;++i)
+	{
+		var blank=level-i;
+		for(var k=0;k < blank;++k)
+		{
+			document.write("&nbsp;");
+		}
+		var star=i * 2 - 1;
+		for(var j=0;j < star;++j)
+		{
+			document.write("*");
+		}
+		document.write("<br>");
+	
+	}
+	</script>

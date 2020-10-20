@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+var a = prompt('工资');
+	var s = 1200;
+	var shui = 0;
+	var b = a - s;
+	if(b <= 500) {
+		
+		shui = b * 0.05 - 0;
+		
+	} else if(b <= 2000) {
+		
+		shui = b * 0.1 - 25;
+		
+	} else if(b <= 5000) {
+		
+		shui = b * 0.15 - 125;
+		
+	} else if(b <= 20000) {
+		
+		shui = b * 0.2 - 375;
+		
+	} else if(b <= 40000) {
+		
+		shui = b * 0.25 - 1375;
+		
+	} else if(b <= 60000) {
+		
+		shui = b * 0.3 - 3375;
+		
+	} else if(b <= 80000) {
+		
+		shui = b * 0.35 - 6375;
+		
+	} else if(b <= 100000) {
+		
+		shui = b * 0.4 - 10375;
+		
+	} else {
+		
+		shui = b * 0.45 - 15375;
+		
+	}
+	document.write(shui);
+</script>
